@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Calculator App</h1>
+        <div class="container">
+            <div>
+                <p id="display">0</p>
+            </div>
+            <div>
+                <button onclick="appendNum('7')">7</button>
+                <button onclick="appendNum('8')">8</button>
+                <button onclick="appendNum('9')">9</button>
+                <button id="add" onclick="appendOperator('+')">+</button>
+            </div>
+            <div>
+                <button onclick="appendNum('4')">4</button>
+                <button onclick="appendNum('5')">5</button>
+                <button onclick="appendNum('6')">6</button>
+                <button  id="sub" onclick="appendOperator('-')">-</button>
+            </div>
+            <div>
+                <button onclick="appendNum('1')">1</button>
+                <button onclick="appendNum('2')">2</button>
+                <button onclick="appendNum('3')">3</button>
+                <button id="div" onclick="appendOperator('/')">/</button>
+            </div>
+            <div>
+                <button onclick="appendNum('0')">0</button>
+                <button id="mul" onclick="appendOperator('*')">*</button>
+                <button id="dot" onclick="appendDecimal()">.</button>
+                <button id="equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
